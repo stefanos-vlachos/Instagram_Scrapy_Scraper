@@ -38,13 +38,15 @@ The provided web scraper reads as input usernames of Instagram users from:
 * a JSON file 
     >located in the "resources" folder
 
+
 Due to the fact that this mechanism was created in the context of my thesis, it has a few specific features:
 * it scrapes profiles with a number of followers higher than 1.000 
 * it scrapes profiles that have uploaded at least one post in 2020
 * it scrapes only the posts that were uploaded during the year 2020
 * it is based on the personalised parametrisation of the "settings.py" file, in order to avoid anti-scraping blocking 
-* it works attaching custom request headers to the sent requests, including the Cookies field
-All the above parameters can be modified.
+* it works attaching custom request headers to the sent requests, including the Cookies field for each session
+    >All the above parameters can be modified.
+
 
 From each profile, the scraping mechanism collects:
 * General Information:
@@ -74,6 +76,7 @@ From each profile, the scraping mechanism collects:
     * **Slide Views**
         >in case of Video slide
 
+
 The mechanism also calculates additional metrics that help with reflecting the popularity of the collected Instagram profiles and posts:
 * Post level metrics:
     * **er_view**
@@ -92,11 +95,13 @@ The mechanism also calculates additional metrics that help with reflecting the p
     * **avg_days_between_posts**
         >Average upload frequency of the account, based on the collected posts
 
+
 In order to handle Instagram's tactic that divides the posts of each account at subsections of 12 posts, the collection of the fields mentioned above was completed via two methods:
 * **parse()**
     >Handles the first 12 posts of each account
 * **parse_pages()**
     >Handles the next dozens of posts of each account
+
 
 As soon as all the necessary fields have been collected, they are being grouped and stored as documents in the MongoDB database, using the file "pipelines.py". The structure of each document is declared in the "items.py" file and it is as follows:
 * **personal_info**
@@ -107,3 +112,20 @@ As soon as all the necessary fields have been collected, they are being grouped 
     >An object containing all the unique hashtags that have been mentioned in the collected posts of an account
 * **user_posts**
     >An array containing the fields of all the collected posts of an account 
+
+How to Use
+---------------------------
+1. Download the project
+2. Open the file "instagram_spider.py" that is located in the folder "spiders"
+3. Update the variable "request_header", based on the request headers that your browser sends to Instagram
+    >This field can be found selecting one of the sent requests in the section "Network", while inspecting an Instagram account
+4. Update the variable "mozilla_cookies", based on the "Cookies" field that your browser attaches to the sent requests
+    >This field can be found selecting one of the sent requests in the section "Network", while inspecting an Instagram account
+5. Comment/Uncomment one of the provided methods to populate the list "users_to_scrape"
+    >Import names from file or database
+6. Open Command Line
+7. cd to the path of the project
+8. Run:
+```
+scrapy crawl InstagramSpider
+```
