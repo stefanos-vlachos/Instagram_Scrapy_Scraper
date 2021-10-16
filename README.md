@@ -123,9 +123,13 @@ How to Use
     >This field can be found selecting one of the sent requests in the section "Network", while inspecting an Instagram account
 5. Comment/Uncomment one of the provided methods to populate the list "users_to_scrape"
     >Import names from file or database
-6. Open Command Line
-7. cd to the path of the project
-8. Run:
+6. Open the file "pipelines.py"
+7. Upload the variables "myclient", "db" and "collection", based on the address of your database
+8. Open the file "documents_exporter.py", located in the folder "tools"
+9. Upload the variables "myclient", "db" and "collection", based on the address of your database
+10. Open Command Line
+11. **cd** to the path of the project
+12. Run:
 ```
 scrapy crawl InstagramSpider
 ```
