@@ -21,17 +21,18 @@ In order to use this web scraper you have to:
 Description
 ---------------------------
 
-#### Stracture
+>Stracture
 This web scraper has the basic stracture of a Scrapy spider with the addition of two folders: the "resources" folder and the "tools" folder.
 
 The "resources" folder was created to store files that contain important data for the scraping mechanism, such as names of Instagram profiles.
 
 The "tools" folder was created to store files that contain usually used functions, such as functions that carry out the communication with the database.
 
-####  Features
+>Features
 The provided web scraper reads as input usernames of Instagram users from:
 * a database collection
-* a JSON file (located in the "resources" folder)
+* a JSON file 
+    - located in the "resources" folder
 
 Due to the fact that this mechanism was created in the context of my thesis, it has a few specific features:
 * it scrapes profiles with a number of followers higher than 1.000 
@@ -43,60 +44,60 @@ All the above parameters can be modified.
 
 From each profile, the scraping mechanism collects:
 * General Information:
-    * User Name
-    * User ID
-    * Account Type/Category
-    * Number of followers
-    * Number of followings
-    * Number of posts
-    * Number of videos
+    * **User Name**
+    * **User ID**
+    * **Account Type/Category**
+    * **Number of followers**
+    * **Number of followings**
+    * **Number of posts**
+    * **Number of videos**
 * Fields of each uploaded post:
-    * Post ID
-    * Post Type 
-        Photo, Video or Slideshow
-    * Upload Date
-    * Number of Likes
-    * Number of Comments
-    * Number of Views 
-        in case of Video post
-    * Tagged Users
-    * Hashtags
+    * **Post ID**
+    * **Post Type** 
+        - Photo, Video or Slideshow
+    * **Upload Date**
+    * **Number of Likes**
+    * **Number of Comments**
+    * **Number of Views**
+        - in case of Video post
+    * **Tagged Users**
+    * **Hashtags**
 * Fields of each slide in a Slideshow:
-    * Slide ID
-    * Slide Type
-    * Slide Views  
-        in case of Video slide
+    * **Slide ID**
+    * **Slide Type**
+    * **Slide Views**
+        - in case of Video slide
 
 The mechanism also calculates additional metrics that help with reflecting the popularity of the collected Instagram profiles and posts:
 * Post level metrics:
-    * er_view 
-        (Number of Likes / Number of Views of a video) * 100 : Reflects the engagement of Instagram users with a video
-    * er_post
-        (Number of Likes / Number of followers) * 100 : Reflects the engagement of Instagram users with a post
-    * er_comments post
-        ((Number of Likes + Number of Comments) / Number of followers) * 100 : Reflects more accurately the engagement of Instagram users with a post
+    * **er_view**
+        - (Number of Likes / Number of Views of a video) * 100
+    * **er_post**
+        - (Number of Likes / Number of followers) * 100
+    * **er_comments post**
+        - ((Number of Likes + Number of Comments) / Number of followers) * 100
 * Account level metrics:
-    * avg_likes
-        Average number of Likes, based on the collected posts
-    * avg_comments
-        Average number of Comments, based on the collected posts
-    * avg_engagement
-        Average er_comments_post, based on the collected posts
-    * avg_days_between_posts
-        Average upload frequency of the account, based on the collected posts
+    * **avg_likes**
+        - Average number of Likes, based on the collected posts
+    * **avg_comments**
+        - Average number of Comments, based on the collected posts
+    * **avg_engagement**
+        - Average er_comments_post, based on the collected posts
+    * **avg_days_between_posts**
+        - Average upload frequency of the account, based on the collected posts
 
 In order to handle Instagram's tactic that divides the posts of each account at subsections of 12 posts, the collection of the fields mentioned above was completed via two methods:
-* parse()
-    Handles the first 12 posts of each account
-* parse_pages()
-    Handles the next dozens of posts of each account
+* **parse()**
+    - Handles the first 12 posts of each account
+* **parse_pages()**
+    - Handles the next dozens of posts of each account
 
 As soon as all the necessary fields have been collected, they are being grouped and stored as documents in the MongoDB database, using the file "pipelines.py". The structure of each document is as follows:
-* personal_info
-    An object containing all the collected general information of an account mentioned above
-* tagged_users
-    An object containing all the unique users that have been mentioned in the collected posts of an account
-* hashtags
-    An object containing all the unique hashtags that have been mentioned in the collected posts of an account
-* user_posts
-    An array containing the fields of all the collected posts of an account 
+* **personal_info**
+    - An object containing all the collected general information of an account mentioned above
+* **tagged_users**
+    - An object containing all the unique users that have been mentioned in the collected posts of an account
+* **hashtags**
+    - An object containing all the unique hashtags that have been mentioned in the collected posts of an account
+* **user_posts**
+    - An array containing the fields of all the collected posts of an account 
