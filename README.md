@@ -21,14 +21,18 @@ In order to use this web scraper you have to:
 Description
 ---------------------------
 
-#### Stracture
-This web scraper has the basic stracture of a Scrapy spider with the addition of two folders: the "resources" folder and the "tools" folder.
+#### Structure
+---------------------------
 
-The "resources" folder was created to store files that contain important data for the scraping mechanism, such as names of Instagram profiles.
-
-The "tools" folder was created to store files that contain usually used functions, such as functions that carry out the communication with the database.
+This web scraper has the basic stracture of a Scrapy spider with the addition of two folders: 
+* the "resources" folder 
+    >created to store files that contain important data for the scraping mechanism, such as names of Instagram profiles.
+* the "tools" folder.
+    >created to store files that contain usually used functions, such as functions that carry out the communication with the database.
 
 ####  Features
+-----------------------------
+
 The provided web scraper reads as input usernames of Instagram users from:
 * a database collection
 * a JSON file 
@@ -47,6 +51,8 @@ From each profile, the scraping mechanism collects:
     * **User Name**
     * **User ID**
     * **Account Type/Category**
+    * **Gender**
+        >It was manually populated, beacause Instagram does not provide this field
     * **Number of followers**
     * **Number of followings**
     * **Number of posts**
@@ -92,7 +98,7 @@ In order to handle Instagram's tactic that divides the posts of each account at 
 * **parse_pages()**
     >Handles the next dozens of posts of each account
 
-As soon as all the necessary fields have been collected, they are being grouped and stored as documents in the MongoDB database, using the file "pipelines.py". The structure of each document is as follows:
+As soon as all the necessary fields have been collected, they are being grouped and stored as documents in the MongoDB database, using the file "pipelines.py". The structure of each document is declared in the "items.py" file and it is as follows:
 * **personal_info**
     >An object containing all the collected general information of an account mentioned above
 * **tagged_users**
