@@ -1,5 +1,5 @@
-Instagram Scrapy Spider
-=======================
+Instagram Scrapy Web Scraper
+============================
 
 Overview
 ---------
