@@ -1,0 +1,330 @@
+[{
+  "_id": {
+    "$oid": "622ce18555d1c107b85d362d"
+  },
+  "name": "Blue Star Ferries",
+  "id": "bluestarferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce22b55d1c107b85d3630"
+  },
+  "name": "Hellenic Seaways",
+  "id": "hellenic.seaways",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce33d55d1c107b85d3631"
+  },
+  "name": "Minoan Lines",
+  "id": "minoanlines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce39a55d1c107b85d3632"
+  },
+  "name": "Seajets",
+  "id": "seajetsgr",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce3ef55d1c107b85d3633"
+  },
+  "name": "Golden Star Ferries",
+  "id": "golden_star_ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce45b55d1c107b85d3635"
+  },
+  "name": "Aegean Speedlines",
+  "id": "aegean_speedlines_official",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce4ca55d1c107b85d3636"
+  },
+  "name": "Anek Lines",
+  "id": "anek_lines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce8c655d1c107b85d3638"
+  },
+  "name": "Saronic Ferries",
+  "id": "saronicferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce91655d1c107b85d3639"
+  },
+  "name": "Sea Speed Ferries",
+  "id": "seaspeed_ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ce9b555d1c107b85d363a"
+  },
+  "name": "Dodekanisos Seaways",
+  "id": "dodekanisos_seaways",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cea0655d1c107b85d363c"
+  },
+  "name": "Zanteferries Official",
+  "id": "zanteferriesofficial",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cea5455d1c107b85d363d"
+  },
+  "name": "Anes Ferries",
+  "id": "anes_ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ceab555d1c107b85d363f"
+  },
+  "name": "Fast Ferries",
+  "id": "fastferries_official",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ceb9f55d1c107b85d3641"
+  },
+  "name": "Levante Ferries",
+  "id": "levante_ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cec7955d1c107b85d3643"
+  },
+  "name": "SeaDreams",
+  "id": "seadreams_official",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622ced3655d1c107b85d3644"
+  },
+  "name": "Goutos Lines",
+  "id": "goutoslines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf0e755d1c107b85d3645"
+  },
+  "name": "Aegean Speed Lines",
+  "id": "aegean_speedlines_official",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf18155d1c107b85d3646"
+  },
+  "name": "Attica-Group.com",
+  "id": "atticagroupgreece",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf24e55d1c107b85d3647"
+  },
+  "name": "Kefalonian Lines",
+  "id": "kefalonianlines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf2ba55d1c107b85d3648"
+  },
+  "name": "Nova Ferries",
+  "id": "novaferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf34c55d1c107b85d3649"
+  },
+  "name": "Ventouris Ferries",
+  "id": "ventouris_ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf4fe55d1c107b85d364a"
+  },
+  "name": "Kerkyra Lines",
+  "id": "kerkyralines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf59555d1c107b85d364b"
+  },
+  "name": "Skyros Shipping Co",
+  "id": "skyrosshippingco",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf60655d1c107b85d364c"
+  },
+  "name": "Aegean Airlines",
+  "id": "aegeanairlines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf69a55d1c107b85d364e"
+  },
+  "name": "Blue Bird Airways",
+  "id": "blue.bird.airways",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf6fd55d1c107b85d364f"
+  },
+  "name": "Ellinair Airlines",
+  "id": "ellinair_airlines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf75e55d1c107b85d3651"
+  },
+  "name": "Olympic Air",
+  "id": "olympic_air",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf7c355d1c107b85d3653"
+  },
+  "name": "SKY express Airlines",
+  "id": "skyexpressgreece",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf88955d1c107b85d3655"
+  },
+  "name": "Air Mediterranean",
+  "id": "airmediterranean",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf91155d1c107b85d3656"
+  },
+  "name": "Marathon Airlines",
+  "id": "marathonairlines",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cf93f55d1c107b85d3657"
+  },
+  "name": "Olympus Airways",
+  "id": "olympusairways",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfb2555d1c107b85d3658"
+  },
+  "name": "airtickets",
+  "id": "airtickets.gr",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfba455d1c107b85d365a"
+  },
+  "name": "petas.gr",
+  "id": "petas.gr",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfc0c55d1c107b85d365b"
+  },
+  "name": "airshop.gr",
+  "id": "airshop_gr",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfd0655d1c107b85d365c"
+  },
+  "name": "eSky",
+  "id": "esky_travel",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfdbf55d1c107b85d365d"
+  },
+  "name": "Ferryhopper",
+  "id": "ferryhopper_com",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfe1555d1c107b85d365f"
+  },
+  "name": "Ferryscanner",
+  "id": "ferryscanner",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "622cfe6455d1c107b85d3660"
+  },
+  "name": "Viva.gr",
+  "id": "vivagr_tickets",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a51a58b387269c92783f"
+  },
+  "name": "Aegean Speed Lines",
+  "id": "aegean_speedlines_official",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a56758b387269c927840"
+  },
+  "name": "Superfast Ferries",
+  "id": "superfastferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a5a258b387269c927841"
+  },
+  "name": "Salamina Ferries",
+  "id": "salamina_ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a5fb58b387269c927842"
+  },
+  "name": "Aidipsos Ferries NE",
+  "id": "aidipsosferriesne",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a69958b387269c927843"
+  },
+  "name": "Triton Ferries",
+  "id": "triton.ferries",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a6d558b387269c927844"
+  },
+  "name": "Corfu Ferries",
+  "id": "corfu_ferries_official",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a7d958b387269c927845"
+  },
+  "name": "Ionian Seaways",
+  "id": "ionianseaways",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a80a58b387269c927846"
+  },
+  "name": "Express Skopelitis",
+  "id": "express_skopelitis",
+  "platform": "Instagram"
+},{
+  "_id": {
+    "$oid": "6258a84858b387269c927847"
+  },
+  "name": "Skg_Airlines / Aviation",
+  "id": "thessaloniki_airlines",
+  "platform": "Instagram"
+}]
